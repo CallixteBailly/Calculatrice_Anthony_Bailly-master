@@ -62,10 +62,9 @@ public class main {
 		addButton(bt7,"7");
 		addButton(bt8,"8");
 		addButton(bt9,"9");
+		addButton(btnVirgule,".");
 		textAffiche.setText("");
 		
-		btnVirgule = new JButton(".");
-		btnVirgule.setBackground(Color.WHITE);
 		btnEgal = new JButton("=");
 		btnEgal.setBackground(Color.WHITE);
 		btnEgal.addActionListener(new ActionListener() {

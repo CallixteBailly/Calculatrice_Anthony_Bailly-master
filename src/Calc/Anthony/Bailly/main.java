@@ -22,11 +22,9 @@ public class main {
 		TextField textAffiche = new TextField("");
 		textAffiche.disable();
 		
-<<<<<<< HEAD
 		Button bt0 = new Button("0");
 		bt0.addActionListener(new ActionListener() 
 		{
-=======
 
 		JButton bt0 =  new JButton(),
 				bt1 =  new JButton(),
@@ -87,7 +85,6 @@ public class main {
 		btPlus = new JButton("+");
 		btPlus.setBackground(Color.WHITE);
 		btPlus.addActionListener(new ActionListener() {
->>>>>>> origin/master
 			
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub

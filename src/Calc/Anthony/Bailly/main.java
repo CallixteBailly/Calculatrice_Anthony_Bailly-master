@@ -22,9 +22,72 @@ public class main {
 		TextField textAffiche = new TextField("");
 		textAffiche.disable();
 		
+<<<<<<< HEAD
 		Button bt0 = new Button("0");
 		bt0.addActionListener(new ActionListener() 
 		{
+=======
+
+		JButton bt0 =  new JButton(),
+				bt1 =  new JButton(),
+				bt2 =  new JButton(),
+				bt3 =  new JButton(),
+				bt4 =  new JButton(),
+				bt5 =  new JButton(),
+				bt6 =  new JButton(),
+				bt7 =  new JButton(),
+				bt8 =  new JButton(),
+				bt9 =  new JButton(),
+				btnVirgule = new JButton(),
+				btPlus = new JButton(),
+				btMoins = new JButton(),
+				btDiv = new JButton(),
+				btFois = new JButton(),
+				btPerc = new JButton(),
+				btCancelButton = new JButton(),
+				btCos = new JButton(),
+				btSin = new JButton(),
+				btTan = new JButton(),
+				btPow = new JButton(),
+				btPuis= new JButton(),
+				btnEgal = new JButton();
+		
+		addButton(bt0,"0");
+		addButton(bt1,"1");
+		addButton(bt2,"2");
+		addButton(bt3,"3");
+		addButton(bt4,"4");
+		addButton(bt5,"5");
+		addButton(bt6,"6");
+		addButton(bt7,"7");
+		addButton(bt8,"8");
+		addButton(bt9,"9");
+		addButton(btnVirgule,".");
+		textAffiche.setText("");
+		
+		btnEgal = new JButton("=");
+		btnEgal.setBackground(Color.WHITE);
+		btnEgal.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try{	
+					Double resultat = calcul(operateur);
+					textAffiche.setText("");
+					textAfficheH.setText("" + resultat);
+					chiffre = ""+resultat;
+					bool = true;
+				} catch (Exception e2) {
+					textAfficheH.setText("Erreur");
+				}
+			}
+		});
+		
+
+		btPlus = new JButton("+");
+		btPlus.setBackground(Color.WHITE);
+		btPlus.addActionListener(new ActionListener() {
+>>>>>>> origin/master
 			
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
